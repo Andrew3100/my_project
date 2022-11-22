@@ -1,4 +1,11 @@
-<?php
+1668124
 
-echo 'Сторонkhgkykyjkvний файл подключён';
+31582741Dom!
 
+
+Активация шторма:
+
+
+funikov@bsu.edu.ru
+
+Belgorod12331000
