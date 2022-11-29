@@ -14,6 +14,7 @@ if ($a > $b) {
 
 // оператор переключения
 switch ($b) {
+
     case 1:
         echo 1;
         break;
