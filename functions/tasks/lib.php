@@ -19,6 +19,27 @@ function key_value($array) {
     //echo '<pre>';
     //var_dump($keys);
     //echo '</pre>';
+}
 
+// переобъявляем $sum равной текущему $sum плюс $value
+function get_sum_or_multiplication($array,$operation) {
+    if ($operation == '+') {
+        $result = 0;
+        foreach ($array as $value) {
+            $result = $result + $value;
+        }
+    } else {
+        if ($operation != '*') {
+            exit('Передан неверный математический знак');
+        } else {
+            $result = 1;
+            foreach ($array as $value) {
+                $result = $result * $value;
+            }
+        }
+    }
+    echo '<pre>';
+    var_dump($result);
+    echo '</pre>';
 
 }
