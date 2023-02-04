@@ -9,12 +9,14 @@
 </head>
 <body>
 
-<form action="script.php" method="get">
+<form action="script.php" method="post">
 
-<input type="text" name="name" required>
+<label for="id_name">Укажите имя</label>
+<input id="id_name" type="text" name="name" required>
 <br>
 <br>
-<input name="age" type="number">
+<label for="id_age">Укажите возраст</label>
+<input id="id_age" name="age"  type="number">
 <br>
 <br>
 <input name="birthday" type="date">
@@ -32,10 +34,7 @@
 <textarea name="about">Предустановленный текст</textarea>
 <br>
 <br>
-<input type="radio" name="1" value="1">
-<input type="radio" name="1" value="2">
-<input type="radio" name="1" value="3">
-<br>
+
 <br>
 <select name="select">
     <option value="1">Вариант 1</option>
