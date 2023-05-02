@@ -34,7 +34,6 @@ while ($record = mysqli_fetch_assoc($data)) {
         $ban = 'Пользователь активен';
     }
 
-
     # создание строк таблицы
     echo "
     <tr>
