@@ -15,3 +15,20 @@ function get_summ() {
     let sum = parseInt(first) + parseInt(second);
     document.getElementById('result').innerHTML = "Сумма чисел равна: " + sum;
 }
+
+
+function fon() {
+    $.ajax({
+        url: 'back.php',
+        method: 'post',
+        dataType: 'json',
+        data: {
+            first: document.getElementById('one').value,
+            second: document.getElementById('two').value
+        },
+        success: function(json){
+            document.getElementById('result').innerHTML =
+                'Сумма чисел равна: ' + json['response']
+        }
+    });
+}
